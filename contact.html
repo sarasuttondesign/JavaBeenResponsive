@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Contact Java Been</title>
+	<link rel="stylesheet" type="text/css" href="css/JavaBeenStyles.css">
+	<script src="https://kit.fontawesome.com/aa83092026.js" crossorigin="anonymous"></script> <!--this is for the social media icons-->
+</head>
+
+<body>
+	<wrapper>
+		<header>
+		<nav>
+			<ul>
+				<li><a href="index.html">home</a></li>
+				<li><a href="about.html">about</a></li>
+				<li><a href="menu.html">menu</a></li>
+				<li><a href="visit.html">visit</a></li>
+				<li><a href="contact.html">contact</a></li>
+				<li><a href="events.html">events</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section>
+		<h1>Connect with Java Been</h1>
+	</section>	
+	<form name="Contact Us" method="post" action="formprocess.html">
+	<table cellpadding="5px">
+	<tr>	
+	<td>Name:</td> 
+	<td colspan="2"><input size="50" maxlength="50" type="text" name="myText" value="name"></td>
+	</tr>
+	<tr>	
+	<td>Email:</td> 
+	<td colspan="2"><input size="50" maxlength="100" type="text" name="myText" value="example@email.com"></td>
+	</tr>
+	<tr>	
+	<td>Phone:</td> 
+	<td colspan="2"><input size="50" maxlength="50" type="text" name="myText" value="000-000-0000"></td>
+	</tr>
+	<tr>	
+	<td valign="top">Please let us know what you are reaching out about:</td><td colspan="2"><select name="mySel" size="3">
+	<option value="1">Customer Service</option>	
+	<option value="2">Wholesale</option>
+	<option value="3">Book an Event</option>	
+	</select>
+	</td> </tr>
+	<tr>	
+	<td valign="top">Your Message: </td>
+	<td colspan="2"><textarea disabled="disabled" name="myTa" rows="15" cols="100">	
+	</textarea></td>
+	</tr>
+	<tr>	
+	<td>Subscribe<input type="radio" name="rad1" value="yes" checked="checked"></td>
+	<td>Do Not Subscribe<input type="radio" name="rad1" value="no"></td>
+	</tr>
+	<tr>	
+	<td><input type="button" name="myBtn" value="Submit"></td>
+	<td><input type="reset" name="myRest" value="Clear"></td>
+	</tr>		
+	</table>
+	</form>
+	</wrapper>
+</body>
+</html>

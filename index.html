@@ -1,0 +1,73 @@
+<!doctype html> 
+<html>
+<head> 
+<meta charset="utf-8">
+<title>Java Been Coffee</title>
+	<meta name="viewport" content="width=device-width, initial scale=1">
+	<link type="text/css" rel="stylesheet" href="css/JavaBeenStyles.css">
+	<link rel="stylesheet" href="css/Bitter-VariableFont_wght.woff"> 
+	<link rel="stylesheet" href="css/Hind-Regular.woff"> 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+	<script src="https://kit.fontawesome.com/aa83092026.js" crossorigin="anonymous"></script> <!--this is for the social media icons-->
+<script>
+$(document).ready(function(){
+  $("p").on({
+    mouseenter: function(){
+      $(this).css("background-color", "#DFD9AB");
+    },  
+    mouseleave: function(){
+      $(this).css("background-color", "#883E24");
+    },  
+  });
+});
+</script>
+</head> 
+<body>
+	<wrapper>
+	<header>
+		<nav>
+		<ul>
+		<li><a href="index.html">home</a></li>
+		<li><a href="about.html">about</a></li>
+		<li><a href="menu.html">menu</a></li>
+		<li><a href="visit.html">visit</a></li>
+		<li><a href="contact.html">contact</a></li>
+		<li style="float:right"><a class="active" href="events.html">events</a></li>
+		</ul>
+		</nav>
+	</header>
+	<section>
+		<div class="container">
+			<img src="images/Coffee_berries_in_a_coffee_plantation.jpg" alt="coffee tree with ripe fruits" style="width: 50%;"> 
+			<div class="centered">
+			<h1>Home</h1>
+			</div>	
+		</div>	
+	</section>
+	<section>
+		<h2>Community</h2>
+		<p>We are excited to be a part of the community!</p>
+	</section>
+	
+	<section>
+		<h2>Events</h2>
+		<p>Our space converts into a performance space at night.</p>
+	</section>
+	
+	<section>
+		<h2>Visit</h2>
+		<p>Come by for your favorite coffee beverage.</p>
+	</section>
+	
+	<footer>
+		<div class="row">
+			<div class="column"><address><p>123 Riverside Drive <br> Louisville, KY 11111</p></address>
+			</div>
+			<div class="column"><p>&copy;JavaBeen 2023 <br> Created by Sara Sutton</p>
+			</div>
+			<div class="column"></div>
+		</div>
+	</footer>
+	</wrapper>	
+</body>
+</html>
