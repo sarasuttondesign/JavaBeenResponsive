@@ -1,29 +1,44 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>Contact Java Been</title>
-	<link rel="stylesheet" type="text/css" href="css/JavaBeenStyles.css">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Java Been</title>
+	<link href="css/bootstrap-4.4.1.css" rel="stylesheet"> <!--this is the link for bootstrap-->
+	<link href="style.css" rel="stylesheet" type="text/css"> <!--this is the link for the stylesheet-->
+	<link href="http://fonts.googleapis.com/css?family=Hind" rel="stylesheet" type="text/css"> <!--link for hind font-->
+	<link href="http://fonts.googleapis.com/css?family=Bitter" rel="stylesheet" type="text/css"> <!--link for bitter font-->
 	<script src="https://kit.fontawesome.com/aa83092026.js" crossorigin="anonymous"></script> <!--this is for the social media icons-->
-</head>
-
-<body>
-	<wrapper>
-		<header>
-		<nav>
-			<ul>
-				<li><a href="index.html">home</a></li>
-				<li><a href="about.html">about</a></li>
-				<li><a href="menu.html">menu</a></li>
-				<li><a href="visit.html">visit</a></li>
-				<li><a href="contact.html">contact</a></li>
-				<li><a href="events.html">events</a></li>
-			</ul>
-		</nav>
-	</header>
-	<section>
-		<h1>Connect with Java Been</h1>
-	</section>	
+  </head>
+  <body>
+  	<div class="container-fluid">
+  	  <div class="container">
+  	    <nav class="navbar navbar-expand-lg navbar-light bg-dark"> <a class="navbar-brand" href="index.html"><img src="images/JavaBeenLogomain.png" alt="" width="98" height="95" class="img-fluid"/></a>
+  	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+  	      <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+  	        <ul class="navbar-nav mr-auto">
+  	          <li class="nav-item active"> <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a> </li>
+  	          <li class="nav-item"> <a class="nav-link" href="about.html">About</a> </li>
+  	          <li class="nav-item"> <a class="nav-link" href="menu.html">Menu</a></li>
+  	          <li class="nav-item"> <a class="nav-link" href="visit.html">Visit</a></li>
+  	          <li class="nav-item"> <a class="nav-link" href="contact.html">Contact</a></li>
+  	          <li class="nav-item"> <a class="nav-link" href="events.html">Events</a></li>
+  	          <li class="nav-item dropdown">
+  	          <div class="dropdown-menu" aria-labelledby="navbarDropdown1"> <a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+  	          <a class="dropdown-item" href="#">Something else here</a> </div>
+          	  </li>
+  	          <li class="nav-item"> </li>
+            </ul>
+		  
+		  </div>
+        </nav>
+      </div>
+  	</div>
+  	<!-- body code goes here -->
+	<div class="hero-text" align="center">
+    <h1>Contact Us</h1></div>
 	<form name="Contact Us" method="post" action="formprocess.html">
 	<table cellpadding="5px">
 	<tr>	
@@ -39,7 +54,7 @@
 	<td colspan="2"><input size="50" maxlength="50" type="text" name="myText" value="000-000-0000"></td>
 	</tr>
 	<tr>	
-	<td valign="top">Please let us know what you are reaching out about:</td><td colspan="2"><select name="mySel" size="3">
+	<td valign="top">How can we help?</td><td colspan="2"><select name="mySel" size="3">
 	<option value="1">Customer Service</option>	
 	<option value="2">Wholesale</option>
 	<option value="3">Book an Event</option>	
@@ -60,6 +75,23 @@
 	</tr>		
 	</table>
 	</form>
-	</wrapper>
-</body>
+	<br>
+	<br>  
+	  <footer>
+        <div class="row">
+          <div class="col-lg-4"><address><h6>123 Riverside Drive <br> Louisville, KY 11111</h6></address></div>
+		   <div class="col-lg-4"><img src="images/JavaBeenLogomain.png" alt="java been logo" width="65" height="63" class="img-fluid"/><i class="fa-brands fa-facebook-f"></i><i class="fa-brands fa-instagram"></i><i class="fa-brands fa-foursquare"></i></div>
+		   <div class="col-lg-4"><h6>&copy;JavaBeen 2023 <br> Created by Sara Sutton<br><time datetime="2023-7-27">Site last updated: July, 27, 2023</time></h6></div>
+        </div>
+       </footer>
+
+
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+	<script src="js/jquery-3.4.1.min.js"></script>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/popper.min.js"></script> 
+  <script src="js/bootstrap-4.4.1.js"></script>
+  </body>
 </html>
