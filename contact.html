@@ -6,10 +6,29 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Contact Java Been</title>
 	<link href="css/bootstrap-4.4.1.css" rel="stylesheet"> <!--this is the link for bootstrap-->
-	<link href="style.css" rel="stylesheet" type="text/css"> <!--this is the link for the stylesheet-->
+	<link href="css/style.css" rel="stylesheet" type="text/css"> <!--this is the link for the stylesheet-->
 	<link href="http://fonts.googleapis.com/css?family=Hind" rel="stylesheet" type="text/css"> <!--link for hind font-->
 	<link href="http://fonts.googleapis.com/css?family=Bitter" rel="stylesheet" type="text/css"> <!--link for bitter font-->
 	<script src="https://kit.fontawesome.com/aa83092026.js" crossorigin="anonymous"></script> <!--this is for the social media icons-->
+	<script language="javascript">
+	  function vForm()
+		{
+		if (document.contactus.name.value=="")
+		  	{
+		  		alert(please enter your name);
+		  		return false;
+		  	}
+		else if (document.contactus.email.value.indexOf("@")==-1)
+			{
+				alert(please enter a valid email address);
+				return false;
+			}
+
+		}
+		
+	  
+	  
+	</script>
   </head>
   <body>
   	<div class="container-fluid">
@@ -39,7 +58,7 @@
   	<!-- body code goes here -->
 	<div class="hero-text" align="center">
     <h1>Contact Us</h1></div>
-	<form name="Contact Us" method="post" action="formprocess.html">
+	<form name="Contact Us" method="post" action="thankyou.html" onsubmit="return vForm()">
 	<table cellpadding="5px">
 	<tr>	
 	<td>Name:</td> 
