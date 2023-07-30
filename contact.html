@@ -5,8 +5,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Contact Java Been</title>
-	<link href="css/bootstrap-4.4.1.css" rel="stylesheet"> <!--this is the link for bootstrap-->
-	<link href="css/style.css" rel="stylesheet" type="text/css"> <!--this is the link for the stylesheet-->
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet"> <!--this is the link for bootstrap-->
+    <link href="css/style.css" rel="stylesheet" type="text/css"> <!--this is the link for the stylesheet-->
 	<link href="http://fonts.googleapis.com/css?family=Hind" rel="stylesheet" type="text/css"> <!--link for hind font-->
 	<link href="http://fonts.googleapis.com/css?family=Bitter" rel="stylesheet" type="text/css"> <!--link for bitter font-->
 	<script src="https://kit.fontawesome.com/aa83092026.js" crossorigin="anonymous"></script> <!--this is for the social media icons-->
@@ -23,11 +23,17 @@
 				alert(please enter a valid email address);
 				return false;
 			}
-
-		}
-		
-	  
-	  
+		if (document.contactus.tel.value=="")
+		  	{
+		  		alert(please enter your phone number);
+		  		return false;
+		  	}
+		if (document.contactus.message.value=="")
+		  	{
+		  		alert(please enter your phone number);
+		  		return false;
+		  	}
+		}	  
 	</script>
   </head>
   <body>
@@ -58,22 +64,22 @@
   	<!-- body code goes here -->
 	<div class="hero-text" align="center">
     <h1>Contact Us</h1></div>
-	<form name="Contact Us" method="post" action="thankyou.html" onsubmit="return vForm()">
+	<form name="contactus" method="post" action="thankyou.html" onsubmit="return vForm()">
 	<table cellpadding="5px">
 	<tr>	
-	<td>Name:</td> 
-	<td colspan="2"><input size="50" maxlength="50" type="text" name="myText" value="name"></td>
+	<td>Name:</td>
+	<td colspan="2"><input size="50" maxlength="50" type="text" name="name" value="" required><i class="fas fa-exclamation-circle failure-icon"></i><i class="far fa-check-circle success-icon"></i><div class="error"></div></td>
 	</tr>
 	<tr>	
 	<td>Email:</td> 
-	<td colspan="2"><input size="50" maxlength="100" type="text" name="myText" value="example@email.com"></td>
+	<td colspan="2"><input size="50" maxlength="100" type="email" name="email" value="" required><i class="fas fa-exclamation-circle failure-icon"></i><i class="far fa-check-circle success-icon"></i><div class="error"></div></td>
 	</tr>
 	<tr>	
 	<td>Phone:</td> 
-	<td colspan="2"><input size="50" maxlength="50" type="text" name="myText" value="000-000-0000"></td>
+	<td colspan="2"><input size="50" maxlength="50" type="tel" placeholder="000-000-0000" name="telephone" value="" required> <i class="fas fa-exclamation-circle failure-icon"></i><i class="far fa-check-circle success-icon"></i><div class="error"></div></td>
 	</tr>
 	<tr>	
-	<td valign="top">How can we help?</td><td colspan="2"><select name="mySel" size="3">
+	<td valign="top">How can we help?</td><td colspan="2"><select name="mySel" size="3" required>
 	<option value="1">Customer Service</option>	
 	<option value="2">Wholesale</option>
 	<option value="3">Book an Event</option>	
@@ -81,15 +87,15 @@
 	</td> </tr>
 	<tr>	
 	<td valign="top">Your Message: </td>
-	<td colspan="2"><textarea disabled="disabled" name="myTa" rows="15" cols="100">	
-	</textarea></td>
+	<td colspan="2"><textarea disabled="disabled" name="message" rows="15" cols="100" required>	
+	</textarea><i class="fas fa-exclamation-circle failure-icon"></i><i class="far fa-check-circle success-icon"></i><div class="error"></div></td>
 	</tr>
 	<tr>	
 	<td>Subscribe<input type="radio" name="rad1" value="yes" checked="checked"></td>
 	<td>Do Not Subscribe<input type="radio" name="rad1" value="no"></td>
 	</tr>
 	<tr>	
-	<td><input type="button" name="myBtn" value="Submit"></td>
+	<td><input type="submit" name="mySub" value="Submit"></td>
 	<td><input type="reset" name="myRest" value="Clear"></td>
 	</tr>		
 	</table>
