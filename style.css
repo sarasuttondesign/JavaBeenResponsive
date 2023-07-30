@@ -1,0 +1,157 @@
+@charset "utf-8";
+body {
+	line-height: 1;
+	background-color:#DFD9AB; /*this is the background color for the body, it is froth*/
+}
+.container-fluid {
+background-color: #191312; /*this is the background color of the header, it is typewriter ink*/
+	.container-fluid .container .navbar.navbar-expand-lg.navbar-dark.bg-dark {}} /*this is the container for the navigation*/
+.navbar-nav.mr-auto .nav-item .nav-link {
+    color: #DFD9AB; /*links for the navigation are froth*/ 
+}
+/*change the link color to cherrywood on hover*/
+li a:hover {
+	background-color: #7E0000;
+}
+/*Change nav bar color for active page*/
+a:active {
+	background-color: rgb(138,140,143); /*background of nav links changes to grey when active page*/
+	text-decoration: underline;
+	}
+/*Type*/
+@font-face {
+	font-family: 'Hind', sans-serif;
+	src: url("Hind-Regular.ttf")
+	
+}
+@font-face {
+	font-family: 'Hind', sans-serif;
+	src: url("Hind-Bold.ttf")
+	
+}
+@font-face {
+	font-family: 'Bitter', serif;
+	src: url("Bitter-VariableFont_wght.ttf")
+}
+h1 {
+	font-family: 'bitter';  
+	font-size:     120px;
+	font-weight:   bold;
+	font-style:    normal;
+	margin-bottom: 9px;
+	color: #191312; /*this is the h1 type color and it is typewriter ink*/ 
+}
+h2 {
+	font-family: 'bitter'; 
+	font-size: 32px;
+	font-weight: normal;
+	font-style: normal;
+	margin-bottom: 9px;
+	color: #191312; /*this is the h2 type color and it is typewriter ink*/ 
+}
+h3 {
+	font-family: 'hind-bold';
+	font-style: normal;
+	font-size: 40px;
+	color: #191312; /*this is the h3 type color and it is typewriter ink*/
+}
+h4 {
+	font-family: 'bitter';
+	font-style: normal;
+	font-size: 40px;
+	color: #883E24; /*this is the h4 type color and it is americano*/
+}
+h5 {
+	font-family: 'hind-bold';
+	font-style: normal;
+	font-size: 32px;
+	color: #883E24 /*this is the h5 type color and it is americano*/
+}
+h6 {
+	font-family: 'hind';
+	font-style: normal;
+	font-size:16px;
+	color: #DFD9AB; /*this is the h6 type color and it is froth*/
+}
+/*paragraphs*/
+p {
+	font-family: 'hind-regular', sans-serif;
+	font-style: normal;
+	font-size: 18px;
+	max-width: 50%;
+	margin-bottom: 9px;
+	color: #191312; /*this is the paragraph type color and it is typewriter ink*/	
+}
+/*contact form styling*/
+body form {
+    background-color: #DFD9AB;
+}
+/*styling for Columns*/
+.row {
+	display: flex;
+}
+.column {
+	flex: 50%;
+}
+/*footer styling*/
+footer {
+    text-align: justify;
+    padding: 5px;
+    background-color: #191312; /*background for footer is typewriter ink*/
+}
+/*social media icons*/
+/*Facebook icon styling*/
+.fa-facebook-f {
+	background-color: #883E24; /*background color for icon is americano*/
+	color: white; /*icon is white*/
+}
+/*Instagram icon styling*/
+.fa-instagram {
+	background-color: #883E24; /*background color for icon is americano*/
+	color: white; /*icon is white*/
+}
+/*Foursquare icon styling*/
+.fa-foursquare {
+	background-color: #883E24; /*background color for icon is americano*/
+	color: white; /*icon is white*/
+}
+/*button styling for social media icons*/
+.fa-brands {
+	padding: 10px;
+	font-size: 20px;
+	width: 40px;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 50%;
+	margin-left: 40px;
+}
+/*hover for social icons*/
+.fa-brands:hover {
+	background-color: #7E0000; /*on hover color is cherrywood*/
+}
+/*general button styling*/
+.button {
+  background-color: #191312; /*typewriter ink*/
+  border: none;
+  border-radius: 8px; 
+  color: #DFD9AB; /*froth*/
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.card-header {
+	background-color: #883E24
+	}
+.card-body {
+	background-color: #EDEAD2	
+	}.navbar.fixed-top.navbar-expand-lg.navbar-dark.bg-dark .navbar-toggler .navbar-toggler-icon {
+    color: #DFD9AB;
+}
+.navbar.fixed-top.navbar-expand-lg.navbar-dark.bg-dark .navbar-toggler .navbar-toggler-icon {
+    outline-color: #DFD9AB;
+}
+.navbar-toggler {
+	color: #DFD9AB
+}
